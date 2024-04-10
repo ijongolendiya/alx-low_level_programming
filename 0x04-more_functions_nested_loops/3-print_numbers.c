@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
- * mul - multiplies two integers
- * @a: int to be multiplied to b
- * @b: int to be multiplied to a
- *
- * Return: the result of the operation
+ * print_numbers - prints the numbers
+ * followed by a new line
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 
 {
-	int c;
+	int i;
 
-	c = a * b;
+	for (i = 0; i < 10; i++)
 
-	return (c);
+	{
+		_putchar(i + '0');
+
+	}
+
+	_putchar('\n');
 
 }
