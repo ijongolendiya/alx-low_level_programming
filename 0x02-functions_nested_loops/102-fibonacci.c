@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * prints out first 50
@@ -10,21 +10,32 @@
 int main(void)
 
 {
-	int inc;
-	unsigned long n1 = 0, n2 = 1, n3;
-	for (inc = 0; inc < 50; inc++)
+	long int i, j, k, next;
 
-	{ 
-		n3 = n1 + n2;
-		printf("%lu", n3);
-		n1 = n2;
-		n2 = n3;
+	j = 1;
 
+	k = 2;
 
-		if (inc == 49)
-			printf("\n");
+	for (i = 1; i <= 50; ++i)
+
+	{
+		if (j != 20365011074)
+
+		{
+			printf("%ld, ", j);
+
+		}
+
 		else
-			printf(", ");
+
+		{
+			printf("%ld\n", j);
+
+		}
+
+		next = j + k;
+		j = k;
+		k = next;
 
 	}
 
