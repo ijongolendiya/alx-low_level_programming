@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * prints out first 50
- * fibonacci suit numbers
+ * main - prints the first 50 Fibonacci numbers
+ * followed by a new line
  *
  * Return: Always 0 (Success)
  */
